@@ -1,0 +1,122 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        /* capa oscura encima */
+        url('../img/fondo.jpeg') no-repeat center center;
+    /* imagen debajo */
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
+    /* para que esté detrás del contenido */
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
+body {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.icon_redes {
+    font-size: x-large;
+}
+
+.contenedor_logo {
+    width: 30%;
+    margin: auto;
+}
+
+.logo_img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+/* .contenedor_texto {
+        border: 2px solid black;
+    } */
+
+.contenedor_redes {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.contenedor_presentacion {
+    /* border: 2px solid black; */
+    margin: 10px;
+    border-radius: 30px;
+    background: rgba(163, 161, 161, 0.645);
+}
+
+/* .contenedor_botones {
+        border: 2px solid black;
+    } */
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    background: rgb(0, 0, 0);
+    margin: 10px;
+    padding: 30px;
+    /* Aumenta el padding para que no se vea aplastado */
+    position: relative;
+    /* Ya lo tenías */
+    overflow: hidden;
+    /* Para que todo quede dentro */
+    min-height: 15px;
+    /* << nueva línea: mínimo alto */
+}
+
+.icon_btn {
+    font-size: x-large;
+    margin-left: 10px;
+}
+
+.contenedor_texto_boton {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+
+.text_presentacion {
+    padding: 20px;
+}
+
+.user_name {
+    letter-spacing: -0.5px;
+}
+
+.text_small {
+    font-size: small;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
